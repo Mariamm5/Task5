@@ -26,7 +26,7 @@ $pages = ceil($totalRows / $end);
 <div class='main'>
     <?php foreach ($cities as $city): ?>
         <div class='city'>
-            <h1><?php echo $city['ID']; ?></h1>
+            <h1><?= $city['ID']; ?></h1>
             <p><strong>Name:</strong> <?php echo $city['Name']; ?></p>
             <p><strong>Country Code:</strong> <?php echo $city['CountryCode']; ?></p>
             <p><strong>District:</strong> <?php echo $city['District']; ?></p>
