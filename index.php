@@ -27,10 +27,10 @@ $pages = ceil($totalRows / $end);
     <?php foreach ($cities as $city): ?>
         <div class='city'>
             <h1><?= $city['ID']; ?></h1>
-            <p><strong>Name:</strong> <?php echo $city['Name']; ?></p>
-            <p><strong>Country Code:</strong> <?php echo $city['CountryCode']; ?></p>
-            <p><strong>District:</strong> <?php echo $city['District']; ?></p>
-            <p><strong>Population:</strong> <?php echo number_format($city['Population']); ?></p>
+            <p><strong>Name:</strong> <?= $city['Name']; ?></p>
+            <p><strong>Country Code:</strong> <?= $city['CountryCode']; ?></p>
+            <p><strong>District:</strong> <?= $city['District']; ?></p>
+            <p><strong>Population:</strong> <?= number_format($city['Population']); ?></p>
         </div>
     <?php endforeach; ?>
 </div>
