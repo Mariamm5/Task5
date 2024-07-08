@@ -1,13 +1,12 @@
 <?php
 include 'pagination.php';
+include_once('functions.php');
 global $con;
-
 
 $end = 10;
 $page = isset($_GET['page-nr']) ? (int)$_GET['page-nr'] : 1;
 $start = ($page - 1) * $end;
 
-// Get data
 $cities = getCities($con, $start, $end);
 $totalRows = getTotalRows($con);
 $pages = ceil($totalRows / $end);
@@ -16,7 +15,7 @@ $pages = ceil($totalRows / $end);
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>City List</title>
     <link rel="stylesheet" type="text/css" href="style.css">
