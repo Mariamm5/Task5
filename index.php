@@ -37,7 +37,7 @@ $pages = ceil($totalRows / $end);
 
 <div class='pagination'>
     <?php for ($i = 1; $i <= $pages; $i++): ?>
-        <a href='?page-nr=<?php echo $i; ?>'><?php echo $i; ?></a>
+        <a href='?page-nr=<?= $i; ?>'><?= $i; ?></a>
     <?php endfor; ?>
 </div>
 
