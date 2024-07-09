@@ -1,5 +1,5 @@
 <?php
-include 'pagination.php';
+include 'database.php';
 include_once('functions.php');
 global $con;
 
@@ -12,8 +12,6 @@ $totalRows = getTotalRows($con);
 $pages = ceil($totalRows / $end);
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

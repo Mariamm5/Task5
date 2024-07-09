@@ -1,5 +1,4 @@
 <?php
-include_once('functions.php');
 $servername = 'localhost';
 $username = 'root';
 $password = '';
