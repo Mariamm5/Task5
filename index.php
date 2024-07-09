@@ -1,8 +1,7 @@
 <?php
 include 'database.php';
-include_once('functions.php');
+include 'functions.php';
 global $con;
-
 $end = 10;
 $page = isset($_GET['page-nr']) ? (int)$_GET['page-nr'] : 1;
 $start = ($page - 1) * $end;
